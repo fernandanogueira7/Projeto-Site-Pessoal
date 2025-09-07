@@ -9,6 +9,10 @@
         display: block;
     }
 
+    menu > ul {
+        text-align: left;
+    }
+
     menu > ul > li {
         display: inline-block;
     }

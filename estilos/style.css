@@ -48,13 +48,13 @@ menu {
 }
 
 menu > ul {
-    list-style: none;
-    display: flex; /*coloca os itens da lista lado a lado*/
-    gap: 20px; /*espaçamento entre os itens*/
-    margin:10px;
+    list-style-type: none;
+   /* display: flex; /*coloca os itens da lista lado a lado*/
+   /* gap: 20px; espaçamento entre os itens*/
     margin-bottom: 0px;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 menu > ul > li > a {
@@ -69,7 +69,6 @@ menu > ul > li > a:hover {
     background-color: #F5E6D3;
     color: #2F4C73;
     border-radius: 20px;
-    padding: 3px;
+    padding: 5px;
     font-weight: bold;
-    cursor: pointer;
 }

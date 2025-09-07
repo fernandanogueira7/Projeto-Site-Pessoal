@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body onresize="telasMenores">
+<body onresize="telasMenores()">
     <header>
         <h1>Fernanda - Desenvolvedora Iniciante</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
 
-        <menu>
+        <menu id="itens">
             <ul>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
@@ -35,7 +35,7 @@
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             } else {
-                intens.style.display = 'none'
+                itens.style.display = 'none'
             }
         }
 
