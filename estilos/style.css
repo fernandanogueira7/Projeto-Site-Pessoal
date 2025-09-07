@@ -31,36 +31,45 @@ header > h1 {
     color: #F5E6D3;
 }
 
-header > ul {
+#burguer {
+    color: #F5E6D3;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    color: black;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
     list-style: none;
     display: flex; /*coloca os itens da lista lado a lado*/
     gap: 20px; /*espaçamento entre os itens*/
-    margin: 0px;
-    padding: 0px;
+    margin:10px;
+    margin-bottom: 0px;
+    padding: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-header > ul > li > a {
+menu > ul > li > a {
+    display: block;
     text-decoration: none;
     background-color: #2F4C73;
     color: #F5E6D3;
 }
 
-header > ul > li > a:hover {
+menu > ul > li > a:hover {
     text-decoration: underline;
     background-color: #F5E6D3;
     color: #2F4C73;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 3px;
     font-weight: bold;
+    cursor: pointer;
 }
-
-/*
-header > div > ul > li > a {
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    text-decoration: none;
-    display: inline-block;
-    background-color: aqua;
-    padding: 5px;
-}*/

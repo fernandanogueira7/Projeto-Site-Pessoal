@@ -5,16 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
-<body>
+<body onresize="telasMenores">
     <header>
         <h1>Fernanda - Desenvolvedora Iniciante</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+
+        <menu>
             <ul>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+        </menu>
+            
     </header>
+    <main>
+        <article>
+            <h2>Testando</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae earum debitis, et facilis incidunt sit voluptatum vitae amet, eaque quas delectus, sint nihil ipsa? Animi recusandae repellat ipsum veniam!</p>
+        </article>
+    </main>
+
+    <script>
+        function telasMenores () {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                intens.style.display = 'none'
+            }
+        }
+
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+
+    </script>
+
 </body>
 </html>
