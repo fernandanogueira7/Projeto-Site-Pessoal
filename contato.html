@@ -16,6 +16,7 @@
 
         <menu id="itens">
             <ul>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -25,20 +26,45 @@
     </header>
 
     <main>
-        <article>
-            <h2>Testando</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum recusandae earum debitis, et facilis incidunt sit voluptatum vitae amet, eaque quas delectus, sint nihil ipsa? Animi recusandae repellat ipsum veniam!</p>
-        </article>
+        <section id="contact">
+            <div>
+                Imagem
+            </div>
+
+            <div>
+                <h1>Entre em contato comigo!</h1>
+                <form action="contato.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="seu nome" autocomplete="on" required>
+                        <label for="iemail">E-mail</label>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        
+                        <label for="itel">Telefone</label>
+                        <input type="tel" id="telefone" name="itelefone" placeholder="(99) 99999-9999" autocomplete="on" required minlength="11">
+                        <label for="itexto">Mensagem</label>
+                        <input type="text" name="texto" id="itexto" placeholder="sua mensagem" required>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
     </main>
 
-    <script>
+    <!--
+    
         function telasMenores () {
             if (window.innerWidth >= 768) {
                 itens.style.display = 'block'
             } else {
                 itens.style.display = 'none'
             }
-        }
+    } 
+
+    -->
+
+     <script>
 
         function clickMenu () {
             if (itens.style.display == 'block') {
