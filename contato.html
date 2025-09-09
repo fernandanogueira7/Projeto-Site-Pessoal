@@ -27,24 +27,32 @@
 
     <main>
         <section id="contact">
-            <div>
-                Imagem
-            </div>
 
-            <div>
+            <div id="formulario">
                 <h1>Entre em contato comigo!</h1>
                 <form action="contato.php" method="post" autocomplete="on">
+
                     <div class="campo">
                         <label for="inome">Nome</label>
-                        <input type="text" name="nome" id="inome" placeholder="seu nome" autocomplete="on" required>
+                        <input type="text" name="nome" id="inome" placeholder="seu nome" autocomplete="on" required>            
+                    </div>
+
+                    <div class="campo">
                         <label for="iemail">E-mail</label>
                         <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
-                        
+                    </div>
+
+                    <div class="campo">
                         <label for="itel">Telefone</label>
                         <input type="tel" id="telefone" name="itelefone" placeholder="(99) 99999-9999" autocomplete="on" required minlength="11">
-                        <label for="itexto">Mensagem</label>
-                        <input type="text" name="texto" id="itexto" placeholder="sua mensagem" required>
                     </div>
+
+                    <div class="campo">
+                        <label for="itexto">Mensagem</label>
+                        <textarea name="texto" id="itexto" rows="7" cols="40" placeholder="Digite sua mensagem..."></textarea>
+                    </div>
+
+                    <input id="botao" type="button" value="Enviar">
 
                 </form>
             </div>
